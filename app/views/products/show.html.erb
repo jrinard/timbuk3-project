@@ -1,0 +1,17 @@
+<% content_for(:title, "Product") %>
+
+<h1>Specific Product: <%= @product.name %> </h1>
+
+<h4><%= @product.name %></h4>
+<h4><%= @product.description %></h4>
+<h4><%= @product.origin %></h4>
+<h4><%= @product.cost %></h4>
+<h4><%= @product.style %></h4>
+<h4><%= @product.image %></h4>
+
+
+<hr>
+<%= link_to "Products", products_path %> |
+<%= link_to "Delete Product", product_path(@product),
+                        :data => {:confirm => "Are you sure?",
+                                       :method => "delete"} %>
