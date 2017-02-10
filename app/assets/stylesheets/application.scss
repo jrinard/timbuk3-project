@@ -1,9 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-li {
-  list-style-type: none;
-}
 
 .box {
   text-align: center;
@@ -30,12 +27,16 @@ li {
   padding: 20px
 }
 
+.black {
+  color: #000;
+  padding: 20px
+}
 .well {
   width: 550px;
 }
 
 .well2 {
-  background-color: #d2d2d2;
+  background-color: #fff;
   border-radius: 5px;
   padding: 20px;
   border: thin solid #fff;
@@ -102,4 +103,33 @@ img {
 
 .container {
   width: 100%;
+}
+
+body {
+  background-color: #444;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #fff;
+}
+
+a:link {
+  color: #df2f2f;
+  text-decoration: none;
+}
+a:visited {
+  color: #df2f2f;
+  text-decoration: none;
+}
+a:hover {
+  color: #df2f2f;
+  text-decoration: none;
+}
+a:active {
+  color: #df2f2f;
+  text-decoration: none;
+}
+
+.red {
+  color: #df2f2f;
 }

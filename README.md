@@ -1,24 +1,33 @@
-# README
+# Timbuk3 Products App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app allows the user to view products and product details. Also includes view, edit and delete capabilities.
 
-Things you may want to cover:
+* Ruby version - 2.3.1
 
-* Ruby version
+### Database Setup
 
-* System dependencies
+ * `postgres` in Terminal
+ * `rails db:create`
+ * `rails db:migrate`
 
-* Configuration
+### Run Ap
+* `bundle install`
+* `rails s`
+* Visit localhost:3000 in browser
 
-* Database creation
+### Run Tests
 
-* Database initialization
+* `rspec` in terminal
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+### Support and Contact Details
 
-* Deployment instructions
+* Github for Joshua Rinard: https://github.com/jrinard
 
-* ...
+* Email: jrinard@hotmail.com
+
+### License
+
+MIT
+
+Copyright (c) 2016 Joshua Rinard
