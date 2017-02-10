@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "EDIT PRODUCT" do
   it "edit product" do
     visit products_path
-    click_link 'New Product'
+    click_link 'Add Product'
     fill_in 'name', :with => 'Backpack'
     fill_in 'description', :with => 'Backpack'
     fill_in 'origin', :with => 'Backpack'

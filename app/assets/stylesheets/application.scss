@@ -30,12 +30,17 @@ li {
   padding: 20px
 }
 
+.well {
+  width: 550px;
+}
+
 .well2 {
   background-color: #d2d2d2;
   border-radius: 5px;
   padding: 20px;
   border: thin solid #fff;
   margin: 10px;
+  max-width: 350px;
 }
 .form-control {
   margin: 8px 1px;
@@ -83,4 +88,18 @@ li {
 
 .span-class {
   font-size: .5em;
+}
+
+// -----
+
+img {
+  width:100%;
+}
+
+.image-resize img {
+  width:100%;
+}
+
+.container {
+  width: 100%;
 }

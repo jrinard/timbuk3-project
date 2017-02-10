@@ -1,17 +1,14 @@
 <% content_for(:title, "Product") %>
 
-<h1>Specific Product: <%= @product.name %> </h1>
-
-<h4><%= @product.name %></h4>
-<h4><%= @product.description %></h4>
-<h4><%= @product.origin %></h4>
-<h4><%= @product.cost %></h4>
-<h4><%= @product.style %></h4>
-<h4><%= @product.image %></h4>
-
-<hr>
-<%= link_to "All Products", products_path %> |
-<%= link_to "Edit Product", edit_product_path(@product) %> |
-<%= link_to "Remove Product", product_path(@product),
-                        :data => {:confirm => "Are you sure?",
-                                       :method => "delete"} %>
+<div class="col-md-6">
+  <%= link_to "Edit Product", edit_product_path(@product) %> |
+  <%= link_to "Remove Product", product_path(@product),:data => {:confirm => "Are you sure?",:method => "delete"} %>
+  <div class="well">
+    <h1><%= @product.name %> </h1>
+    <h5><%= @product.description %></h5>
+    <h4><%= @product.origin %></h4>
+    <h4>$<%= @product.cost %></h4>
+    <h4>Style: <%= @product.style %></h4>
+    <h4><%= image_tag @product.image %></h4>
+  </div>
+</div>
