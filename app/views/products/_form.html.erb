@@ -1,11 +1,11 @@
 <%= render "layouts/errors", :object => @product %>
 
-<%= form_for @product do |f| %>
-  <%= f.text_field :name, :class => 'form-control', :placeholder => "name" %>
-  <%= f.text_field :description, :class => 'form-control', :placeholder => "description" %>
-  <%= f.text_field :origin, :class => 'form-control', :placeholder => "origin" %>
-  <%= f.text_field :cost, :class => 'form-control', :placeholder => "cost" %>
-  <%= f.text_field :style, :class => 'form-control', :placeholder => "style" %>
-  <%= f.text_field :image, :class => 'form-control', :placeholder => "image" %>
-  <%= f.submit%>
-<% end %>
+    <%= form_for @product do |f| %>
+      <%= f.text_field :name, :class => 'form-control', :placeholder => "name" %>
+      <%= f.text_field :description, :class => 'form-control', :placeholder => "description" %>
+      <%= f.text_field :origin, :class => 'form-control', :placeholder => "origin" %>
+      <%= f.text_field :cost, :class => 'form-control', :placeholder => "cost" %>
+      <%= f.text_field :style, :class => 'form-control', :placeholder => "style" %>
+      <%= f.text_field :image, :class => 'form-control', :placeholder => "image" %>
+      <%= f.submit 'Save', :class => "btn btn-primary"%>
+    <% end %>

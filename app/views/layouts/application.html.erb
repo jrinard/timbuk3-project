@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <div class="container">
+    <div class="row">
       <title>Timbuk3</title>
       <%= csrf_meta_tags %>
-
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     </head>
 
     <body>
-      <nav class="navbar navbar-inverse bg-inverse">
-        <!-- <%= image_tag "tag.png", :class => 'navbar-brand', :id => 'brand'%> -->
+      <nav class="navbar custom-navbar">
+        <span class="logo"> TIMBUK3</span>
         <%= link_to "Home", products_path, :class => 'navbar-brand' %>
         <%= link_to "Add Product", new_product_path, :class => 'navbar-brand' %>
       </nav>
@@ -19,6 +19,7 @@
       <%= yield %>
       <%= flash[:alert] %>
       <%= flash[:notice] %>
+      <footer>Copyright (c) 2017 Joshua Rinard</footer>
     </body>
   </div>
 </html>

@@ -10,12 +10,12 @@ describe "the add a product process" do
     fill_in 'cost', :with => 'Backpack'
     fill_in 'style', :with => 'Backpack'
     fill_in 'image', :with => 'url'
-    click_on 'Create Product'
+    click_on 'Save'
     expect(page).to have_content 'Backpack'
   end
   it "gives error when no name is entered" do
     visit new_product_path
-    click_on 'Create Product'
+    click_on 'Save'
     expect(page).to have_content 'errors'
   end
 end

@@ -1,6 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
 
 .box {
   text-align: center;
@@ -33,6 +37,7 @@
 }
 .well {
   width: 550px;
+  background-color: #fff;
 }
 
 .well2 {
@@ -42,33 +47,17 @@
   border: thin solid #fff;
   margin: 10px;
   max-width: 350px;
+  min-height: 450px;
+  box-shadow:5px 5px 5px #000;
 }
 .form-control {
   margin: 8px 1px;
 }
 .edit-form {
   width: 300px;
+  display: block;
+  margin:auto;
 }
-.search-field {
-  padding-right: 30px;
-  border-radius: 3px;
-  height: 30px;
-  margin-top: 2px;
-  margin-right: 10px;
-}
-.search-input {
-  padding-right: 30px;
-  border-radius: 3px;
-  height: 30px;
-  margin-top: 10px;
-  margin-right: 10px;
-}
-#brand {
-  height: 45px;
-  padding: 0;
-  margin:3px;
-}
-
 .header-brand {
   height: 150px;
   margin: -20px 0px ;
@@ -106,7 +95,7 @@ img {
 }
 
 body {
-  background-color: #444;
+  background-color: #282c2f;
 }
 
 h1, h2, h3, h4, h5 {
@@ -114,22 +103,104 @@ h1, h2, h3, h4, h5 {
 }
 
 a:link {
-  color: #df2f2f;
+  color: #382525;
   text-decoration: none;
 }
 a:visited {
-  color: #df2f2f;
+  color: #382525;
   text-decoration: none;
 }
 a:hover {
-  color: #df2f2f;
+  color: #382525;
   text-decoration: none;
 }
 a:active {
-  color: #df2f2f;
+  color: #382525;
   text-decoration: none;
 }
 
 .red {
-  color: #df2f2f;
+  color: #382525; //df2f2f
+}
+
+.navbar {
+  width: 100%;
+}
+
+.custom-navbar {
+  background-color: #3d7bb2;
+  // background: linear-gradient(to right, #3d7bb2 , #222);
+  border: solid thin #282c2f;
+  box-shadow: 5px #000;
+}
+
+.navbar{
+  border: none;
+}
+
+.navbar a:link {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.navbar a:hover {
+  color: #fff;
+  background-color: #222;
+  font-size: 1.5em;
+}
+
+.navbar a:visited {
+  color: #fff;
+  font-size: 1.5em;
+}
+.navbar a:active {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.navbar-logo {
+  float: left;
+  width: 151px;
+}
+
+.logo {
+  float: left;
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 4px;
+  margin-right: 10px;
+  font-size: 2em;
+}
+
+.content {
+  margin-left: 60px;
+}
+
+footer {
+  // position: absolute;
+  // bottom: 0;
+  width: 100%;
+  background-color: #000;
+  margin-top: 50px;
+  height: 50px;
+  color: #999;
+  text-align: center;
+  padding: 15px;
+  border-top: solid thin #3d7bb2;
+  overflow: hidden;
+  margin-top: 450px;
+
+}
+
+.stripe {
+  background-color: #555;
+  height: 230px;
+  width: 100%;
+  margin-top: -340px;
+  border-top: solid thin #999;
+  border-bottom: solid thin #000;
+}
+
+.pad {
+
 }

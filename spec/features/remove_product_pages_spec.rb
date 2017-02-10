@@ -10,7 +10,7 @@ describe "REMOVE PRODUCT" do
     fill_in 'cost', :with => 'Backpack'
     fill_in 'style', :with => 'Backpack'
     fill_in 'image', :with => 'url'
-    click_on 'Create Product'
+    click_on 'Save'
     click_on 'Backpack'
     click_on 'Remove Product'
     expect(page).to_not have_content 'Backpack'

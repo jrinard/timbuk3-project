@@ -10,7 +10,7 @@ describe "EDIT PRODUCT" do
     fill_in 'cost', :with => 'Backpack'
     fill_in 'style', :with => 'Backpack'
     fill_in 'image', :with => 'url'
-    click_on 'Create Product'
+    click_on 'Save'
     click_on 'Backpack'
     click_on 'Edit Product'
     fill_in 'name', :with => 'Backpack2'
@@ -19,7 +19,7 @@ describe "EDIT PRODUCT" do
     fill_in 'cost', :with => 'Backpack2'
     fill_in 'style', :with => 'Backpack2'
     fill_in 'image', :with => 'url'
-    click_on 'Update Product'
+    click_on 'Save'
     expect(page).to have_content 'Backpack2'
   end
 end
