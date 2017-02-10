@@ -9,9 +9,9 @@
 <h4><%= @product.style %></h4>
 <h4><%= @product.image %></h4>
 
-
 <hr>
-<%= link_to "Products", products_path %> |
-<%= link_to "Delete Product", product_path(@product),
+<%= link_to "All Products", products_path %> |
+<%= link_to "Edit Product", edit_product_path(@product) %> |
+<%= link_to "Remove Product", product_path(@product),
                         :data => {:confirm => "Are you sure?",
                                        :method => "delete"} %>

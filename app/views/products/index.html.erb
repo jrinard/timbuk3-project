@@ -2,12 +2,10 @@
 
 <ul>
   <% @products.each do |product| %>
-    <li><%= link_to product.name, product_path(product) %> |
-      <%= link_to "Edit", edit_product_path(product) %>
-    </li> <!-- passed in product into path so it can find the id -->
+    <li><%= link_to product.name, product_path(product) %> </li>
   <% end %>
 </ul>
 
 <hr>
-<%= link_to "Products", products_path %> |
+<%= link_to "All Products", products_path %> |
 <%= link_to "New Product", new_product_path %>
