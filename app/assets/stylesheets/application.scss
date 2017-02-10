@@ -1,0 +1,86 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+li {
+  list-style-type: none;
+}
+
+.box {
+  text-align: center;
+}
+
+.well {
+  padding: 10px 10px;
+  margin: 30px 10px;
+  width: 350px;
+}
+
+.dark {
+  background-color: #222;
+  border-radius: 5px;
+}
+
+.center {
+  text-align: center;
+  padding: 10px;
+}
+
+.white {
+  color: #fff;
+  padding: 20px
+}
+
+.well2 {
+  background-color: #d2d2d2;
+  border-radius: 5px;
+  padding: 20px;
+  border: thin solid #fff;
+  margin: 10px;
+}
+.form-control {
+  margin: 8px 1px;
+}
+.edit-form {
+  width: 300px;
+}
+.search-field {
+  padding-right: 30px;
+  border-radius: 3px;
+  height: 30px;
+  margin-top: 2px;
+  margin-right: 10px;
+}
+.search-input {
+  padding-right: 30px;
+  border-radius: 3px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+#brand {
+  height: 45px;
+  padding: 0;
+  margin:3px;
+}
+
+.header-brand {
+  height: 150px;
+  margin: -20px 0px ;
+}
+
+.content {
+  margin-right: 10px;
+}
+
+.titles {
+  font-size: 1.5em;
+}
+
+.center-img {
+  display:block;
+  margin:auto;
+}
+
+.span-class {
+  font-size: .5em;
+}
