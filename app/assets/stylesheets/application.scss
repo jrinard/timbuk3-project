@@ -129,7 +129,6 @@ a:active {
 
 .custom-navbar {
   background-color: #3d7bb2;
-  // background: linear-gradient(to right, #3d7bb2 , #222);
   border: solid thin #282c2f;
   box-shadow: 5px #000;
 }
@@ -177,8 +176,6 @@ a:active {
 }
 
 footer {
-  // position: absolute;
-  // bottom: 0;
   width: 100%;
   background-color: #000;
   margin-top: 50px;
@@ -201,6 +198,6 @@ footer {
   border-bottom: solid thin #000;
 }
 
-.pad {
-
+.alert-success {
+  text-align: center;
 }

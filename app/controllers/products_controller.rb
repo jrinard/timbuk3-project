@@ -12,17 +12,17 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @product = Product.new(product_params) #generates a new product object with the parameters returned from the product_params method.
+    @product = Product.new(product_params)
     if @product.save
       flash[:notice] = "Product successfully added!"
-      redirect_to products_path # redirecting to /products
+      redirect_to products_path
     else
       render :new
     end
   end
 
   def edit
-    @product = Product.find(params[:id]) #we do NOT need to use strong parameters. We can safely pull the id from the params.
+    @product = Product.find(params[:id])
   end
 
   def update
@@ -38,13 +38,12 @@ class ProductsController < ApplicationController
   def destroy
     @product = Product.find(params[:id])
     @product.destroy
-    flash[:notice] = "Product successfully deleted!"
+    flash[:notice] = "Product successfully removed!"
     redirect_to products_path
   end
 
-# needed for create and update - needs to be on bottom
-  private #Strong parameters use a private method to permit only designated parameters to be passed for our model. Therefore, any malicious request sent with malicious parameters will not successfully process since the private method can not be accessed.
+  private
     def product_params
-      params.require(:product).permit(:name, :description, :origin, :cost, :style, :image) #example of multiple fields
+      params.require(:product).permit(:name, :description, :origin, :cost, :style, :image)
     end
 end

@@ -8,17 +8,14 @@
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     </head>
-
     <body>
       <nav class="navbar custom-navbar">
         <span class="logo"> TIMBUK3</span>
         <%= link_to "Home", products_path, :class => 'navbar-brand' %>
         <%= link_to "Add Product", new_product_path, :class => 'navbar-brand' %>
       </nav>
-
+      <div class="alert-success"><%= flash[:notice] %></div>
       <%= yield %>
-      <%= flash[:alert] %>
-      <%= flash[:notice] %>
       <footer>Copyright (c) 2017 Joshua Rinard</footer>
     </body>
   </div>

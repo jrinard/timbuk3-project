@@ -1,13 +1,8 @@
 <div class="content">
-
   <h4>Welcome to Timbuk3 the official site for custom made bags.</h4>
-
-<h2>Products</h2>
+  <h2>Products</h2>
 </div>
-  <% @products.each do |product| %>
-
-
-
+<% @products.each do |product| %>
 <div class="col-md-4 pad">
   <div class="well2">
     <%= link_to image_tag(product.image), product_path(product), :class => "image-resize" %>
@@ -15,8 +10,6 @@
     <h4><span class="red">$</span><%= link_to product.cost, product_path(product)%></h4>
     <h5><%= link_to "View Details", product_path(product) %></h5>
   </div>
-
 </div>
 <% end %>
-</div>
-  <div class="stripe"></div>
+<div class="stripe"></div>
